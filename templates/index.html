@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dev AI Agent</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h2>AI Developer Agent</h2>
+
+<!-- File Selector -->
+<label>Select File:</label>
+<select id="fileSelect">
+    <option value="test_project/buggy_code.py">buggy_code.py</option>
+</select>
+
+<br><br>
+
+<!-- Task Buttons -->
+<label>Select Action:</label><br><br>
+
+<button onclick="runAgent('debug')">Debug</button>
+<button onclick="runAgent('explain')">Explain</button>
+<button onclick="runAgent('document')">Document</button>
+<button onclick="runAgent('optimize')">Optimize</button>
+
+<pre id="output"></pre>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
